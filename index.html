@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BurgirBox - A legízletesebb hamburgerek széles választéka! Nézd meg menünket és válogass kedvenc ételeid közül.">
+    <title>BurgirBox</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1556911073-52527ac43712'); /* Itt cserélheted a képet */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(255, 204, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FF5733;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown button */
+        .dropbtn {
+            margin: 0 15px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            animation: fade 24s infinite;
+        }
+        @keyframes fade {
+            0% { opacity: 0; }
+            12% { opacity: 1; }
+            25% { opacity: 1; }
+            37% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        .hero img:nth-child(1) { animation-delay: 0s; }
+        .hero img:nth-child(2) { animation-delay: 6s; }
+        .hero img:nth-child(3) { animation-delay: 12s; }
+        .hero img:nth-child(4) { animation-delay: 18s; }
+        .hero h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .offer, .popular-items {
+            padding: 20px;
+            text-align: center;
+        }
+        .offer {
+            background-color: #66CC66;
+            color: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .menu-item {
+            background-color: #FFFFFF;
+            border: 1px solid #66CC66;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 204, 0, 0.9);
+        }
+        @media (max-width: 600px) {
+            .hero {
+                height: 250px;
+            }
+            .hero h2 {
+                font-size: 1.5em;
+                padding: 10px;
+            }
+            .menu-item {
+                width: 150px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BurgirBox</h1>
+    <nav>
+        <a href="#home">Főoldal</a>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <a href="menu.html" class="dropbtn">Étlap</a>
+            <div class="dropdown-content">
+                <a href="menu.html#burgers">Hamburgerek</a>
+                <a href="menu.html#drinks">Italok</a>
+            </div>
+        </div>
+
+        <a href="about.html">Rólunk</a>
+        <a href="contact.html">Kapcsolat</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images2.jpg" alt="Finom burger 1">
+    <img src="Kép.png" alt="Finom burger 2">
+    <img src="sajtburger.png" alt="Finom burger 3">
+    <img src="letöltés.png" alt="Finom burger 4">
+    <h2>Ízletes kaland vár rád a BurgirBox-ban!</h2>
+</section>
+
+<section class="offer">
+    <h2>Különleges Ajánlat!</h2>
+    <p>Ma 10% kedvezmény a Cheeseburgira!</p>
+</section>
+
+<section class="popular-items">
+    <h2>Népszerű Ételeink</h2>
+    <div class="menu-item">Klasszikus Burgir</div>
+    <div class="menu-item">Cheeseburgir</div>
+    <div class="menu-item">Vegán Burgir</div>
+    <div class="menu-item">Spicy Burgir</div>
+</section>
+<script>
+    document.querySelectorAll('.dropdown-content a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.getAttribute('href') === 'menu.html#italok') {
+                e.preventDefault(); // Megakadályozza az alapértelmezett link viselkedést
+                document.querySelector('#italok').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+<footer>
+    <p>&copy; 2024 BurgirBox. Minden jog fenntartva.</p>
+</footer>
+
+</body>
+</html>

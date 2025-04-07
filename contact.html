@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - BurgirBox</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFCC00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #FFCC00;
+            border-radius: 5px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #FFCC00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background-color: #FFB400;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFCC00;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BurgirBox - Kapcsolat</h1>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="menu.html">Étlap</a>
+        <a href="about.html">Rólunk</a>
+        <a href="contact.html">Kapcsolat</a>
+    </nav>
+</header>
+
+<section class="contact-info">
+    <h2>Elérhetőségeink</h2>
+    <p>Email: info@burgirbox.hu</p>
+    <p>Telefon: +36 1 234 5678</p>
+    <p>Cím: 1234 Budapest, Hamburger utca 5.</p>
+</section>
+
+<section class="contact-form">
+    <h2>Írj nekünk!</h2>
+    <form action="/submit-form" method="post">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Üzenet:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Küldés</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 BurgirBox. Minden jog fenntartva.</p>
+</footer>
+
+</body>
+</html>

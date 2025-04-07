@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étlap - BurgirBox</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFCC00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .menu-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu-category {
+            margin-bottom: 40px;
+        }
+
+        .menu-category h2 {
+            color: #66CC66;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background-color: #FFFFFF;
+            border: 1px solid #66CC66;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .menu-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .menu-item h3 {
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            margin-bottom: 10px;
+            color: #666666;
+        }
+
+        .menu-item span {
+            font-weight: bold;
+            color: #66CC66;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFCC00;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BurgirBox - Étlap</h1>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="menu.html">Étlap</a>
+        <a href="about.html">Rólunk</a>
+        <a href="contact.html">Kapcsolat</a>
+    </nav>
+</header>
+
+<section class="menu-section">
+    <!-- Burgerek kategória -->
+    <div class="menu-category">
+        <h2>Burgerek</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="classic.jfif" alt="Klasszikus Burgir">
+                <h3>Klasszikus Burgir</h3>
+                <p>Frissen sült marhahús, ropogós saláta, paradicsom és sajtos öntet.</p>
+                <span>2500 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="cheese.jfif" alt="Cheeseburgir">
+                <h3>Cheeseburgir</h3>
+                <p>Marhahús dupla sajttal, hagymával és pikáns szószokkal.</p>
+                <span>2700 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="vegan.jfif" alt="Vegán Burgir">
+                <h3>Vegán Burgir</h3>
+                <p>Grillezett növényi alapú burger, friss zöldségekkel.</p>
+                <span>2300 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="csipos.jfif" alt="Spicy Burgir">
+                <h3>Spicy Burgir</h3>
+                <p>Fűszeres marhahús, jalapeño paprika és extra csípős szósz.</p>
+                <span>2800 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="sajtosburger.jfif" alt="Sajtburger">
+                <h3>Sajtburger</h3>
+                <p>Friss marhahús és olvadt sajt, klasszikus ízek.</p>
+                <span>2600 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="duplasajt.jfif" alt="Dupla Sajtburger">
+                <h3>Dupla Sajtburger</h3>
+                <p>Dupla marhahús, dupla sajt, tökéletes ízélmény.</p>
+                <span>3000 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="chichken.jfif" alt="Csirkés Burger">
+                <h3>Csirkés Burger</h3>
+                <p>Grillezett csirkemell, ropogós saláta és avokádó.</p>
+                <span>2800 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="bacon.jfif" alt="Bacon Burger">
+                <h3>Bacon Burger</h3>
+                <p>Marhahús, ropogós bacon, cheddar sajt és BBQ szósz.</p>
+                <span>2900 Ft</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Italok kategória -->
+    <div class="menu-category">
+        <h2>Italok</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="cola.jfif" alt="Kóla">
+                <h3>Kóla</h3>
+                <p>Hűsítő, frissítő kóla.</p>
+                <span>600 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="limonade.jfif" alt="Limonádé">
+                <h3>Limonádé</h3>
+                <p>Házi készítésű citromos limonádé.</p>
+                <span>800 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="viz.jfif" alt="Ásványvíz">
+                <h3>Ásványvíz</h3>
+                <p>Friss forrásvíz, szénsavas vagy mentes.</p>
+                <span>500 Ft</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 BurgirBox. Minden jog fenntartva.</p>
+</footer>
+
+</body>
+</html>
